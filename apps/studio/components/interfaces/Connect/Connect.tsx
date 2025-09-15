@@ -70,7 +70,7 @@ export const Connect = () => {
   )
 
   // helper to get tthe connection type object
-  function getConnectionObjectForTab(tab: string | null, frameworks: ConnectionType[]) {
+  function getConnectionObjectForTab(tab: string | null, frameworks: ConnectionType[] = []) {
     switch (tab) {
       case 'frameworks':
         return frameworks
